@@ -125,21 +125,19 @@ header .register a {
 .popularCategories {
   display: flex;
   flex-direction: column;
-  margin-top: 10rem;
+  margin-top: 6rem;
   gap: 30px;
 }
 .popularCategories h2 {
   text-align: center;
   font-family: "Poppins";
   padding: 15px 0 30px 0;
-}
-.popularCategories h2::after {
-  border-bottom: 2px solid green;
+  font-size: 32px;
 }
 .popularCategories .cards-container {
   display: flex;
-  justify-content: space-around;
-  gap: 8px;
+  justify-content: center;
+  gap: 20px;
 }
 .popularCategories .cards-container .card {
   display: flex;
@@ -149,12 +147,28 @@ header .register a {
   gap: 30px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   padding: 40px;
+  width: 15%;
   background-color: #F8F8F8;
+  transition: 0.7s;
+  border-radius: 7px;
+}
+.popularCategories .cards-container .card:hover {
+  background-color: #F53F7B;
+}
+.popularCategories .cards-container .card:hover i {
+  color: white;
+}
+.popularCategories .cards-container .card:hover h2 {
+  color: white;
+}
+.popularCategories .cards-container .card:hover span {
+  background-color: #EB3D76;
+  color: white;
 }
 .popularCategories .cards-container .card a {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   color: black;
 }
 .popularCategories .cards-container .card a i {
@@ -164,6 +178,7 @@ header .register a {
 }
 .popularCategories .cards-container .card a h2 {
   font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .popularCategories .cards-container .card a span {
   text-align: center;
@@ -171,4 +186,51 @@ header .register a {
   background-color: #EEEEEE;
   padding: 10px;
   border-radius: 30px;
+  font-family: "Poppins";
+}
+
+.information-about-site {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7rem;
+}
+.information-about-site h2 {
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+.information-about-site .info-cards {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 20px 10rem;
+}
+.information-about-site .info-cards .card {
+  background: white;
+  padding: 2.5rem;
+  border: 1px solid #E9E9E9;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  font-family: "Poppins";
+  transition: 0.6s;
+}
+.information-about-site .info-cards .card:hover {
+  transform: scale(1.1);
+}
+.information-about-site .info-cards .card span {
+  background-color: #4862C4;
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+}
+.information-about-site .info-cards .card .cards-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: 2rem;
+}
+.information-about-site .info-cards .card .cards-info h4 {
+  font-weight: 600;
 }/*# sourceMappingURL=main.css.map */
