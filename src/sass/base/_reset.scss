@@ -14,3 +14,7 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
     background: #000;
 }
+
+html {
+    scroll-behavior: smooth;
+}

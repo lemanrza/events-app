@@ -15,6 +15,10 @@ body::-webkit-scrollbar-thumb {
   background: #000;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -153,16 +157,13 @@ header .register a {
   border-radius: 7px;
 }
 .popularCategories .cards-container .card:hover {
-  background-color: #F53F7B;
-}
-.popularCategories .cards-container .card:hover i {
-  color: white;
+  background-color: black;
 }
 .popularCategories .cards-container .card:hover h2 {
   color: white;
 }
 .popularCategories .cards-container .card:hover span {
-  background-color: #EB3D76;
+  background-color: #fff72d;
   color: white;
 }
 .popularCategories .cards-container .card a {
@@ -174,7 +175,7 @@ header .register a {
 .popularCategories .cards-container .card a i {
   font-size: 30px;
   text-align: center;
-  color: #F53F7B;
+  color: #fff72d;
 }
 .popularCategories .cards-container .card a h2 {
   font-size: 20px;
@@ -187,6 +188,53 @@ header .register a {
   padding: 10px;
   border-radius: 30px;
   font-family: "Poppins";
+}
+
+.info-counter {
+  margin-top: 4rem;
+  position: relative;
+}
+.info-counter .slider-background-image {
+  display: flex;
+  height: 40vh;
+  width: 100%;
+  position: relative;
+}
+.info-counter .slider-background-image .blackCard {
+  width: 100%;
+  height: 100%;
+  background-color: #1F1F1F;
+  border-right: 2px solid rgb(63, 63, 63);
+}
+.info-counter .counter-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+.info-counter .counter-container .counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  gap: 20px;
+  font-family: "Poppins";
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.info-counter .counter-container .counter h3 {
+  font-weight: 500;
+  background-color: #FFF72D;
+  border-radius: 10px;
+  padding: 4px 7px;
+  color: black;
 }
 
 .information-about-site {
@@ -220,8 +268,8 @@ header .register a {
   transform: scale(1.1);
 }
 .information-about-site .info-cards .card span {
-  background-color: #4862C4;
-  color: white;
+  background-color: #fff72d;
+  color: black;
   padding: 10px;
   border-radius: 50px;
 }
@@ -246,6 +294,7 @@ header .register a {
 .artists h2 {
   text-align: center;
   font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin-bottom: 2rem;
 }
 .artists .swiper {
@@ -263,6 +312,28 @@ header .register a {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+.artists .swiper .swiper-wrapper .swiper-slide:hover .text {
+  background-color: black;
+  color: white;
+}
+.artists .swiper .swiper-wrapper .swiper-slide .text {
+  position: absolute;
+  bottom: 0;
+  left: 32%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  padding: 5px 0;
+  text-align: center;
+  width: 49%;
+  border-left: 1px solid black;
+  transition: 0.6s;
+}
+.artists .swiper .swiper-wrapper .swiper-slide .text h3 {
+  font-weight: 500;
+  font-size: 20px;
 }
 .artists .swiper .swiper-wrapper .swiper-slide .image {
   height: 400px;
@@ -291,4 +362,76 @@ header .register a {
   height: 100%;
   background-color: #1F1F1F;
   border-right: 2px solid rgb(63, 63, 63);
+}
+
+.contact-info {
+  font-family: "Poppins";
+  margin: 0 3rem;
+}
+.contact-info h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 3rem;
+}
+.contact-info .contact-total {
+  display: flex;
+  gap: 7px;
+}
+.contact-info .contact-total .contact-details {
+  display: grid;
+  color: white;
+  padding: 2.4rem 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #282B32;
+}
+.contact-info .contact-total .contact-details .contact-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  align-items: center;
+}
+.contact-info .contact-total .contact-details .contact-detail i {
+  padding: 20px 22px;
+  border: 2px solid #FFF72D;
+  border-radius: 50px;
+  color: #FFF72D;
+  transition: 0.6s;
+}
+.contact-info .contact-total .contact-details .contact-detail i:hover {
+  color: black;
+  background-color: #FFF72D;
+  border: 2px solid black;
+}
+.contact-info .contact-total .contact-details .contact-detail h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.contact-info .contact-total .contact-details .contact-us {
+  margin-top: 2.5rem;
+}
+.contact-info .contact-total .contact-details .contact-us h4 {
+  -webkit-text-decoration: underline #FFF72D;
+          text-decoration: underline #FFF72D;
+}
+.contact-info .contact-total .contact-details .contact-us .logos {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-info .contact-total .contact-details .contact-us .logos i {
+  border: none;
+  color: white;
+}
+.contact-info .contact-total .contact-details .contact-us .logos i:hover {
+  color: #FFF72D;
+  background-color: #282B32;
+}
+
+.signInCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 40%;
+  height: 75vh;
+  background-color: pink;
 }/*# sourceMappingURL=main.css.map */

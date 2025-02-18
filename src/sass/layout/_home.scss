@@ -130,11 +130,11 @@
             border-radius: 7px;
 
             &:hover {
-                background-color: #F53F7B;
+                background-color: black;
 
-                i {
-                    color: white;
-                }
+                // i {
+                //     color: #F53F7B;
+                // }
 
                 h2 {
                     color: white;
@@ -142,7 +142,7 @@
                 }
 
                 span {
-                    background-color: #EB3D76;
+                    background-color: #fff72d;
                     color: white;
                 }
             }
@@ -156,7 +156,7 @@
                 i {
                     font-size: 30px;
                     text-align: center;
-                    color: #F53F7B;
+                    color: #fff72d;
                 }
 
                 h2 {
@@ -172,6 +172,61 @@
                     border-radius: 30px;
                     font-family: "Poppins";
                 }
+            }
+        }
+    }
+}
+
+.info-counter {
+    margin-top: 4rem;
+    position: relative;
+
+
+    .slider-background-image {
+        display: flex;
+        height: 40vh;
+        width: 100%;
+        position: relative;
+
+        .blackCard {
+            width: 100%;
+            height: 100%;
+            background-color: #1F1F1F;
+            border-right: 2px solid rgb(63, 63, 63);
+        }
+    }
+
+    .counter-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        max-width: 800px;
+
+        .counter {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            gap: 20px;
+            font-family: "Poppins";
+            color: white;
+            // background: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            border-radius: 10px;
+
+            h3 {
+                font-weight: 500;
+                background-color: #FFF72D;
+                border-radius: 10px;
+                padding: 4px 7px;
+                color: black;
+
             }
         }
     }
@@ -210,8 +265,9 @@
             }
 
             span {
-                background-color: #4862C4;
-                color: white;
+                // background-color: #4862C4;
+                background-color: #fff72d;
+                color: black;
                 padding: 10px;
                 border-radius: 50px;
 
@@ -242,6 +298,7 @@
     h2 {
         text-align: center;
         font-size: 30px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         margin-bottom: 2rem;
 
     }
@@ -258,16 +315,44 @@
             .swiper-slide {
                 text-align: center;
                 font-size: 18px;
-                // background: #fff;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                position: relative;
+
+                &:hover {
+                    .text {
+                        background-color: black;
+                        color: white;
+                    }
+                }
+
+                .text {
+                    position: absolute;
+                    bottom: 0;
+                    left: 32%;
+                    transform: translate(-50%, -50%);
+                    background-color: white;
+                    color: black;
+                    padding: 5px 0;
+                    text-align: center;
+                    width: 49%;
+                    border-left: 1px solid black;
+                    transition: 0.6s;
+
+                    h3 {
+                        font-weight: 500;
+                        font-size: 20px;
+                    }
+                }
+
 
                 .image {
                     height: 400px;
                     width: 400px;
                     overflow: hidden;
                     position: relative;
+
 
                     img {
                         display: block;
@@ -276,6 +361,7 @@
                         object-fit: cover;
                     }
                 }
+
             }
         }
     }
@@ -294,6 +380,81 @@
             height: 100%;
             background-color: #1F1F1F;
             border-right: 2px solid rgb(63, 63, 63);
+        }
+    }
+}
+
+.contact-info {
+    font-family: "Poppins";
+    margin: 0 3rem;
+
+    h2 {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 3rem;
+    }
+
+    .contact-total {
+        display: flex;
+        // justify-content: space-around;
+        gap: 7px;
+
+        .contact-details {
+            display: grid;
+            color: white;
+            padding: 2.4rem 1rem;
+            grid-template-columns: repeat(2, 1fr);
+            background-color: #282B32;
+
+            .contact-detail {
+                display: flex;
+                flex-direction: column;
+                gap: 13px;
+                align-items: center;
+
+                i {
+                    padding: 20px 22px;
+                    border: 2px solid #FFF72D;
+                    border-radius: 50px;
+                    color: #FFF72D;
+                    transition: .6s;
+
+                    &:hover {
+                        color: black;
+                        background-color: #FFF72D;
+                        border: 2px solid black;
+                    }
+                }
+
+                h4 {
+                    font-size: 20px;
+                    font-weight: 500;
+
+                }
+            }
+
+            .contact-us {
+                margin-top: 2.5rem;
+
+                h4 {
+                    text-decoration: underline #FFF72D;
+                }
+
+                .logos {
+                    display: flex;
+                    justify-content: space-between;
+
+                    i {
+                        border: none;
+                        color: white;
+
+                        &:hover {
+                            color: #FFF72D;
+                            background-color: #282B32;
+                        }
+                    }
+                }
+            }
         }
     }
 }

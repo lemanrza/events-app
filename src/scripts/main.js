@@ -7,6 +7,7 @@ var swiper = new Swiper(".mySwiper1", {
 });
 
 var swiper = new Swiper(".mySwiper2", {
+  loop: true,
     slidesPerView: 3,
     spaceBetween: 26,
     autoplay: {
@@ -18,3 +19,22 @@ var swiper = new Swiper(".mySwiper2", {
       clickable: true,
     },
   });
+  document.addEventListener("DOMContentLoaded", function() {
+    function startCounter(elementId, targetNumber, speed) {
+        let counterElement = document.getElementById(elementId);
+        let currentNumber = 0;
+        
+        let interval = setInterval(function() {
+            if (currentNumber < targetNumber) {
+                currentNumber++;
+                counterElement.textContent = currentNumber;
+            } else {
+                clearInterval(interval);
+            }
+        }, speed);
+    }
+    
+    startCounter("counter1", 120, 10);
+    startCounter("counter2", 245, 15);
+    startCounter("counter3", 35, 20);
+});
