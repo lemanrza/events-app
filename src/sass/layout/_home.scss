@@ -1,20 +1,3 @@
-// .information {
-//     display: flex;
-//     justify-content: space-between;
-//     margin-top: 30px;
-
-//     .partyImage {
-//         width: 50%;
-//         height: 30%;
-
-//         img {
-//             width: 100%;
-//             height: 100%;
-//             object-fit: cover;
-//         }
-//     }
-// }
-
 .slider-info {
     position: relative;
     height: 90vh;
@@ -387,6 +370,7 @@
 .contact-info {
     font-family: "Poppins";
     margin: 0 3rem;
+    margin-bottom: 2rem;
 
     h2 {
         text-align: center;
@@ -396,7 +380,6 @@
 
     .contact-total {
         display: flex;
-        // justify-content: space-around;
         gap: 7px;
 
         .contact-details {

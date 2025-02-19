@@ -56,6 +56,23 @@ header .register a {
   background-color: #FFF72D;
 }
 
+footer {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+footer .footer-image {
+  width: 12%;
+}
+footer .footer-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .slider-info {
   position: relative;
   height: 90vh;
@@ -367,6 +384,7 @@ header .register a {
 .contact-info {
   font-family: "Poppins";
   margin: 0 3rem;
+  margin-bottom: 2rem;
 }
 .contact-info h2 {
   text-align: center;
