@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./src/css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -19,10 +19,10 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
+    <!-- <header>
+        <a class="logo">
             <img src="./src/assets/images/eventopia.png" alt="Eventopia">
-        </div>
+        </a>
         <div>
             <ul>
                 <li><a href="./index.html">Home</a></li>
@@ -35,24 +35,174 @@
             <a href="./signin.html"><i class="fa-regular fa-user"></i></a>
             <a href="./basket.html"><i class="fa-solid fa-cart-shopping"></i></a>
             <a href="./favorites.html"><i class="fa-regular fa-heart"></i></a>
-
-
         </div>
+    </header> -->
+    <header>
+        <div class="header_pages">
+            <ul>
+                <li><a href="./event.html">All Events</a></li>
+                <li><a href="./categories.html">Categories <i class="fa-solid fa-caret-down"></i></a></li>
+                <li><a href="#contactPage">Contact</a></li>
+            </ul>
+        </div>
+        <div class="bars">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <a href="./index.html" class="logo">
+            <img src="./src/assets/images/eventopia logo new.png" alt="Eventopia">
+        </a>
+        <div class="register">
+            <a href="./basket.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="./favorites.html"><i class="fa-regular fa-heart"></i></a>
+            <a href="./login.html"><i class="fa-regular fa-user"></i></a>
+        </div>
+       
     </header>
     <main>
-        <section>
+        <section class="heading_sort">
             <h1>All Events</h1>
             <div class="sort-form">
-                <!-- <h3>Age Restriction</h3> -->
-                <select name="address" id="addressSort">4
-                    <option value="">Choose age range</option>
+                <select name="address" id="addressSort">
+                    <option value="" selected hidden>Choose age range</option>
                     <option value="6">6+</option>
                     <option value="12">12+</option>
                     <option value="18">18+</option>
                 </select>
-                
+                <select name="" id="">
+                    <option value="All">All</option>
+                    <option value="New">Upcoming First</option>
+                    <option value="Old">Oldest First</option>
+                </select>
+                <div class="searchForm">
+                    <input name="search" id="searchInput" placeholder="Search Event">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="event_card_container">
+                <div class="item">
+                    <div class="image">
+                        <img src="./src/assets/images/my image.jpg" alt="">
+                    </div>
+                    <div class="cart-content">
+                        <h5>Leman, Naxcivan</h4>
+                            <span>80$ - dan</span>
+                            <p>11 oct 2005, 01:20</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./src/assets/images/my image.jpg" alt="">
+                    </div>
+                    <div class="cart-content">
+                        <h5>Leman, Naxcivan</h4>
+                            <span>80$ - dan</span>
+                            <p>11 oct 2005, 01:20</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./src/assets/images/my image.jpg" alt="">
+                    </div>
+                    <div class="cart-content">
+                        <h5>Leman, Naxcivan</h4>
+                            <span>80$ - dan</span>
+                            <p>11 oct 2005, 01:20</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./src/assets/images/my image.jpg" alt="">
+                    </div>
+                    <div class="cart-content">
+                        <h5>Leman, Naxcivan</h4>
+                            <span>80$ - dan</span>
+                            <p>11 oct 2005, 01:20</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./src/assets/images/my image.jpg" alt="">
+                    </div>
+                    <div class="cart-content">
+                        <h5>Leman, Naxcivan</h4>
+                            <span>80$ - dan</span>
+                            <p>11 oct 2005, 01:20</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./src/assets/images/my image.jpg" alt="">
+                    </div>
+                    <div class="cart-content">
+                        <h5>Leman, Naxcivan</h4>
+                            <span>80$ - dan</span>
+                            <p>11 oct 2005, 01:20</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./src/assets/images/my image.jpg" alt="">
+                    </div>
+                    <div class="cart-content">
+                        <h5>Leman, Naxcivan</h4>
+                            <span>80$ - dan</span>
+                            <p>11 oct 2005, 01:20</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./src/assets/images/my image.jpg" alt="">
+                    </div>
+                    <div class="cart-content">
+                        <h5>Leman, Naxcivan</h4>
+                            <span>80$ - dan</span>
+                            <p>11 oct 2005, 01:20</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./src/assets/images/my image.jpg" alt="">
+                    </div>
+                    <div class="cart-content">
+                        <h5>Leman, Naxcivan</h4>
+                            <span>80$ - dan</span>
+                            <p>11 oct 2005, 01:20</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./src/assets/images/my image.jpg" alt="">
+                    </div>
+                    <div class="cart-content">
+                        <h5>Leman, Naxcivan</h4>
+                            <span>80$ - dan</span>
+                            <p>11 oct 2005, 01:20</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./src/assets/images/my image.jpg" alt="">
+                    </div>
+                    <div class="cart-content">
+                        <h5>Leman, Naxcivan</h4>
+                            <span>80$ - dan</span>
+                            <p>11 oct 2005, 01:20</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./src/assets/images/my image.jpg" alt="">
+                    </div>
+                    <div class="cart-content">
+                        <h5>Leman, Naxcivan</h4>
+                            <span>80$ - dan</span>
+                            <p>11 oct 2005, 01:20</p>
+                    </div>
+                </div>
+
             </div>
         </section>
+
     </main>
 </body>
 

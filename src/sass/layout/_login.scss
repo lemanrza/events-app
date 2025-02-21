@@ -1,0 +1,66 @@
+.container {
+  background: #F0F2F0;
+  background: -webkit-linear-gradient(to top, #000C40, #F0F2F0);
+  background: linear-gradient(to top, #000C40, #F0F2F0);
+  font-family: "Inter Tight";
+  .form-container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    max-width: 400px;
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+      font-size: 2em;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+
+      .login-input {
+        width: 100%;
+        padding: 12px;
+        border: 2px solid #e1e1e1;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: border-color 0.3s ease;
+
+        &:focus {
+          outline: none;
+          border-color: #667eea;
+        }
+      }
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .redirect-text {
+      text-align: center;
+      margin-top: 20px;
+      color: #666;
+
+      a {
+        color: #353F67;
+        text-decoration: none;
+        font-weight: 600;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

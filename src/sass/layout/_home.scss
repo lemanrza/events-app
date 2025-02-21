@@ -1,6 +1,6 @@
 .slider-info {
     position: relative;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     display: block;
     display: flex;
@@ -51,7 +51,8 @@
                     height: 500px;
                     width: 500px;
                     overflow: hidden;
-                    position: relative;
+                    position: absolute;
+                    // margin-bottom: 6rem;
 
                     img {
                         display: block;
@@ -66,7 +67,7 @@
 
     .slider-background-image {
         display: flex;
-        height: 90vh;
+        height: 100%;
         width: 100%;
         position: absolute;
         top: 0;
@@ -115,10 +116,6 @@
             &:hover {
                 background-color: black;
 
-                // i {
-                //     color: #F53F7B;
-                // }
-
                 h2 {
                     color: white;
 
@@ -164,7 +161,6 @@
     margin-top: 4rem;
     position: relative;
 
-
     .slider-background-image {
         display: flex;
         height: 40vh;
@@ -199,7 +195,6 @@
             gap: 20px;
             font-family: "Poppins";
             color: white;
-            // background: rgba(0, 0, 0, 0.7);
             padding: 10px 20px;
             border-radius: 10px;
 
@@ -248,7 +243,6 @@
             }
 
             span {
-                // background-color: #4862C4;
                 background-color: #fff72d;
                 color: black;
                 padding: 10px;
@@ -389,6 +383,7 @@
             grid-template-columns: repeat(2, 1fr);
             background-color: #282B32;
 
+
             .contact-detail {
                 display: flex;
                 flex-direction: column;
@@ -412,7 +407,7 @@
                 h4 {
                     font-size: 20px;
                     font-weight: 500;
-
+                    text-align: center;
                 }
             }
 
@@ -435,6 +430,148 @@
                             color: #FFF72D;
                             background-color: #282B32;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 991px) {
+    .popularCategories {
+        .cards-container {
+            flex-direction: column;
+
+            .card {
+                margin: auto;
+                width: 70%;
+
+            }
+        }
+    }
+
+    .info-counter {
+        .counter-container {
+            flex-direction: column;
+        }
+
+        .slider-background-image {
+            flex-direction: column;
+            height: 60vh;
+
+            .blackCard {
+                border-bottom: 2px solid rgb(63, 63, 63);
+            }
+        }
+    }
+
+    .information-about-site {
+        .info-cards {
+            grid-template-columns: repeat(2, 1fr);
+            padding: 20px 2rem;
+
+            .card {
+                padding: 1rem;
+            }
+        }
+    }
+
+    .artists {
+        .swiper-wrapper {
+            gap: 0;
+        }
+    }
+
+    .contact-info {
+        margin: 0;
+
+        .contact-total {
+            flex-direction: column;
+
+            .map {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+
+                iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .contact-details {
+                grid-template-columns: repeat(2, 1fr);
+                padding: 1rem 0;
+                gap: 20px;
+
+                .contact-detail {
+                    i {
+                        padding: 15px 17px;
+                    }
+
+                    span {
+                        text-align: center;
+                    }
+
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .information-about-site {
+        .info-cards {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    .contact-info {
+        margin: 0;
+
+        .contact-total {
+            flex-direction: column;
+
+            .map {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+
+                iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .contact-details {
+                grid-template-columns: repeat(1, 1fr);
+                padding: 1rem 0;
+                gap: 20px;
+
+                .contact-detail {
+                    i {
+                        padding: 15px 17px;
+                    }
+
+                    span {
+                        text-align: center;
+                    }
+
+                    p {
+                        text-align: center;
                     }
                 }
             }

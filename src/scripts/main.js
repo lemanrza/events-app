@@ -18,8 +18,31 @@ var swiper = new Swiper(".mySwiper2", {
       el: ".swiper-pagination",
       clickable: true,
     },
+    breakpoints: {
+          1200: {
+            slidesPerView: 4,
+          },
+          1054: {
+            slidesPerView: 4,
+          },
+          991: {
+            slidesPerView: 4,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          576: {
+            slidesPerView: 2,
+          },
+          450: {
+            slidesPerView: 1,
+          },
+          360: {
+            slidesPerView: 1,
+          },
+        },
   });
-  document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
     function startCounter(elementId, targetNumber, speed) {
         let counterElement = document.getElementById(elementId);
         let currentNumber = 0;

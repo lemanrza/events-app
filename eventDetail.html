@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>Home Page</title>
+</head>
+
+<body class="detail-body">
+    <header>
+        <div class="header_pages">
+            <ul>
+                <li><a href="./event.html">All Events</a></li>
+                <li>
+                    <div class="dropdown-category">
+                        <span class="category-text">Categories <i class="fa-solid fa-caret-down"></i></span>
+                        <div class="dropdown-content_categories">
+                            <a href="#">Music</a>
+                            <a href="#">For kids</a>
+                            <a href="#">Sports</a>
+                            <a href="#">Entertainment</a>
+                            <a href="#">Conference</a>
+
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#contactPage">Contact</a></li>
+            </ul>
+        </div>
+        <div class="bars">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <a href="./index.html" class="logo">
+            <img src="./src/assets/images/eventopia logo new.png" alt="Eventopia">
+        </a>
+        <div class="register">
+            <a href="./basket.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="./favorites.html"><i class="fa-regular fa-heart"></i></a>
+            <a href="./login.html"><i class="fa-regular fa-user"></i></a>
+        </div>
+
+    </header>
+    <main>
+            <div class="event-main-content">
+                <div class="event-poster">
+                    <img src="https://static.vecteezy.com/system/resources/previews/047/014/007/non_2x/glow-black-orange-disco-party-dj-event-poster-template-editor_template.jpeg?last_updated=1719648060"
+                        alt="Event Poster">
+                </div>
+
+                <div class="event-content-side">
+                    <div class="info-section-group">
+                        <div class="info-group">
+                            <h3>Event Information</h3>
+                            <ul>
+                                <li><b>Date & Time:</b> <span id="eventDateTime"></span></li>
+                                <li><b>Age Restriction:</b> <span id="ageRestriction"></span></li>
+                                <li><b>Category:</b> <span id="eventCategory"></span></li>
+                            </ul>
+                        </div>
+
+                        <div class="info-group">
+                            <h3>Venue Details</h3>
+                            <ul>
+                                <li><b>Venue Name:</b> <span id="venueName"></span></li>
+                                <li><b>Venue Address:</b> <span id="venueAddress"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="info-section-group">
+                        <div class="info-group">
+                            <h3>Organizer Information</h3>
+                            <ul>
+                                <li><b>Organizer:</b> <span id="organizerName"></span></li>
+                            </ul>
+                        </div>
+
+                        <div class="info-group">
+                            <h3>Event Description</h3>
+                            <p id="eventDescription"></p>
+                        </div>
+                    </div>
+
+                    <div class="ticket-info">
+                        <h3>Ticket Information</h3>
+                        <p><b>Ticket Price:</b> <span id="ticketPrice"></span></p>
+                        <button class="book-now-btn">Add to Basket</button>
+                    </div>
+                </div>
+            </div>
+    </main>
+</body>
+
+</html>
