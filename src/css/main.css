@@ -858,6 +858,361 @@ footer .footer-image img {
   background-color: #f8fafc;
 }
 
+.user-body {
+  font-family: "Inter Tight";
+  background: #F0F2F0;
+  background: linear-gradient(to top, #000C40, #F0F2F0);
+}
+.user-body .user-profile-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem;
+}
+.user-body .user-profile-container .profile-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.user-body .user-profile-container .profile-header .profile-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.user-body .user-profile-container .profile-header .profile-image-container #profileImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+.user-body .user-profile-container .profile-header .profile-image-container .upload-button {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+.user-body .user-profile-container .profile-header .profile-image-container .upload-button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+}
+.user-body .user-profile-container .account-section {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+  margin-bottom: 4rem;
+}
+.user-body .user-profile-container .account-section h2 {
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.user-body .user-profile-container .account-section .form-group {
+  margin-bottom: 1.5rem;
+}
+.user-body .user-profile-container .account-section .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #4a4a4a;
+  font-weight: 500;
+}
+.user-body .user-profile-container .account-section .form-group input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+.user-body .user-profile-container .account-section .form-group input:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+.user-body .user-profile-container .account-section .form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.user-body .user-profile-container .account-section .form-actions .save-button,
+.user-body .user-profile-container .account-section .form-actions .change-password-button {
+  padding: 0.8rem 2rem;
+  border-radius: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.user-body .user-profile-container .account-section .form-actions .save-button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+}
+.user-body .user-profile-container .account-section .form-actions .save-button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+}
+.user-body .user-profile-container .account-section .form-actions .change-password-button {
+  background-color: white;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+}
+.user-body .user-profile-container .account-section .form-actions .change-password-button:hover {
+  background-color: #f8fafc;
+  transform: translateY(-2px);
+}
+.user-body .user-profile-container .ticket-history-section {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+}
+.user-body .user-profile-container .ticket-history-section h2 {
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.user-body .user-profile-container .ticket-history-section .ticket-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.user-body .user-profile-container .ticket-history-section .ticket-container .ticket-item {
+  background: #f8f9fa;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.user-body .user-profile-container .ticket-history-section .ticket-container .ticket-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+.user-body .user-profile-container .ticket-history-section .ticket-container .ticket-item .ticket-poster img {
+  width: 100%;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.user-body .user-profile-container .ticket-history-section .ticket-container .ticket-item .ticket-details {
+  padding: 1.5rem;
+}
+.user-body .user-profile-container .ticket-history-section .ticket-container .ticket-item .ticket-details h3 {
+  margin: 0 0 0.5rem 0;
+  color: #1a1a1a;
+  font-size: 1.2rem;
+}
+.user-body .user-profile-container .ticket-history-section .ticket-container .ticket-item .ticket-details .ticket-price {
+  color: #2563eb;
+  font-weight: 600;
+  margin: 0;
+}
+.user-body .user-profile-container .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.user-body .user-profile-container .modal.show {
+  display: flex;
+}
+.user-body .user-profile-container .modal .modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 24px;
+  padding: 2.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+  height: 60%;
+}
+.user-body .user-profile-container .modal .modal-content .password-form {
+  border: none;
+  border-radius: 24px;
+  padding: 2.5rem;
+  max-width: 400px;
+  width: 100%;
+}
+.user-body .user-profile-container .modal .modal-content .password-form h3 {
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.user-body .user-profile-container .modal .modal-content .password-form .form-group {
+  margin-bottom: 1rem;
+}
+.user-body .user-profile-container .modal .modal-content .password-form .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+.user-body .user-profile-container .modal .modal-content .password-form .form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+.user-body .user-profile-container .modal .modal-content .password-form .change-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.user-body .user-profile-container .modal .modal-content .password-form .change-actions .cancel-button,
+.user-body .user-profile-container .modal .modal-content .password-form .change-actions .save-button {
+  background-color: #e2e8f0;
+  color: #4a4a4a;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.user-body .user-profile-container .modal .modal-content .password-form .change-actions .cancel-button:hover,
+.user-body .user-profile-container .modal .modal-content .password-form .change-actions .save-button:hover {
+  background-color: #cbd5e1;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .user-profile-container {
+    padding: 1.5rem;
+  }
+  .form-actions {
+    flex-direction: column;
+  }
+  .form-actions button {
+    width: 100%;
+  }
+  .ticket-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.basket-body {
+  font-family: "Inter Tight";
+}
+.basket-body .basket {
+  padding: 2rem 0;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 90%;
+  margin: auto;
+}
+.basket-body .basket .basket-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  margin: auto;
+}
+.basket-body .basket .basket-container h1 {
+  text-align: start;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+.basket-body .basket .basket-container .basket-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.basket-body .basket .basket-container .basket-item .left-side {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+}
+.basket-body .basket .basket-container .basket-item .left-side .basket-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.basket-body .basket .basket-container .basket-item .left-side .basket-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+.basket-body .basket .basket-container .basket-item .left-side .basket-item_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.basket-body .basket .basket-container .basket-item .right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 19px;
+}
+.basket-body .basket .basket-container .basket-item .right-side .quantity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.basket-body .basket .basket-container .basket-item .right-side .quantity i {
+  border-radius: 50%;
+  padding: 0.2rem;
+}
+.basket-body .basket .basket-container .basket-item .right-side .basket-item_price {
+  padding: 1.5rem 1rem;
+  border-radius: 20px;
+  background-color: rgb(14, 122, 254);
+}
+.basket-body .basket .basket-container .basket-item .right-side .basket-item_price span {
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+.basket-body .basket .basket-container .basket-item .right-side .removeBtn {
+  padding: 0.9rem 1rem;
+  background-color: #FF8787;
+  border-radius: 50px;
+  border: 1px solid #FF8787;
+}
+.basket-body .basket .basket-container .basket-item .right-side .removeBtn i {
+  color: white;
+}
+.basket-body .basket .basket-container .order-part {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.basket-body .basket .basket-container .order-part span {
+  font-size: 25px;
+}
+.basket-body .basket .basket-container .order-part button {
+  font-family: "Inter Tight";
+  font-size: 18px;
+  color: white;
+  border-radius: 10px;
+  background-color: rgb(0, 123, 255);
+  border: none;
+  padding: 1rem;
+}
+
 .container {
   background: #F0F2F0;
   background: linear-gradient(to top, #000C40, #F0F2F0);
@@ -880,7 +1235,7 @@ footer .footer-image img {
 .container .form-container .form-group {
   margin-bottom: 20px;
 }
-.container .form-container .form-group .login-input {
+.container .form-container .form-group .loginEmail, .container .form-container .form-group .loginPassword {
   width: 100%;
   padding: 12px;
   border: 2px solid #e1e1e1;
@@ -888,11 +1243,11 @@ footer .footer-image img {
   font-size: 16px;
   transition: border-color 0.3s ease;
 }
-.container .form-container .form-group .login-input:focus {
+.container .form-container .form-group .loginEmail:focus, .container .form-container .form-group .loginPassword:focus {
   outline: none;
   border-color: #667eea;
 }
-.container .form-container .btn {
+.container .form-container .loginBtn {
   width: 100%;
   padding: 12px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -955,7 +1310,11 @@ footer .footer-image img {
   flex: 1;
   margin-bottom: 0;
 }
-.container .form-container .form-group .register-input {
+.container .form-container .form-group .registerEmail,
+.container .form-container .form-group .registerFullName,
+.container .form-container .form-group .registerUsername,
+.container .form-container .form-group .registerPassword,
+.container .form-container .form-group .registerConfirmPassword {
   width: 100%;
   padding: 12px;
   border-radius: 5px;
@@ -967,11 +1326,15 @@ footer .footer-image img {
   backdrop-filter: blur(12.3px);
   -webkit-backdrop-filter: blur(12.3px);
 }
-.container .form-container .form-group .register-input:focus {
+.container .form-container .form-group .registerEmail:focus,
+.container .form-container .form-group .registerFullName:focus,
+.container .form-container .form-group .registerUsername:focus,
+.container .form-container .form-group .registerPassword:focus,
+.container .form-container .form-group .registerConfirmPassword:focus {
   outline: none;
   border-color: #667eea;
 }
-.container .form-container .btn {
+.container .form-container .registerBtn {
   width: 100%;
   padding: 12px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -982,7 +1345,7 @@ footer .footer-image img {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
-.container .form-container .btn:hover {
+.container .form-container .registerBtn:hover {
   transform: translateY(-2px);
 }
 .container .form-container .redirect-text {

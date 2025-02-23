@@ -39,30 +39,32 @@
     <div class="container">
         <div class="form-container">
             <h1>Register</h1>
-            <form>
+            <form class="registerForm">
                 <div class="form-row">
                     <div class="form-group half">
-                        <input class="register-input" type="text" name="fullname" placeholder="Full Name" required>
+                        <input class="registerFullName" type="text" name="fullname" placeholder="Full Name" required>
                     </div>
                     <div class="form-group half">
-                        <input class="register-input" type="text" name="username" placeholder="Username" required>
+                        <input class="registerUsername" type="text" name="username" placeholder="Username" required>
                     </div>
                 </div>
                 <div class="form-group">
-                    <input class="register-input" type="email" name="email" placeholder="Email" required>
+                    <input class="registerEmail" type="email" name="email" placeholder="Email" required>
                 </div>
                 <div class="form-group">
-                    <input class="register-input" type="password" name="password" placeholder="Password" required>
+                    <input class="registerPassword" type="password" name="password" placeholder="Password" required>
                 </div>
                 <div class="form-group">
-                    <input class="register-input" type="password" name="confirm-password" placeholder="Confirm Password" required>
+                    <input class="registerConfirmPassword" type="password" name="confirm-password" placeholder="Confirm Password" required>
                 </div>
-                <button type="submit" class="btn">Register</button>
+                <button type="submit" class="registerBtn">Register</button>
             </form>
             <p class="redirect-text">
                 Already have an account? <a href="login.html">Login here</a>
             </p>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="./src/scripts/pages/register.js"></script>
 </body>
 </html> 

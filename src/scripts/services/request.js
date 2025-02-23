@@ -1,5 +1,5 @@
 import axios from "axios";
-import { API_BASE_URL } from "./api.js";
+import {BASE_URL } from "./api.js";
 
 //get all data
 async function getAll(endpoint) {
@@ -10,7 +10,7 @@ async function getAll(endpoint) {
     };
 
     await axios
-        .get(API_BASE_URL + endpoint)
+        .get(BASE_URL + endpoint)
         .then((response) => {
             console.log("axios response: ", response);
             result.data = response.data;
@@ -34,7 +34,7 @@ async function getByID(endpoint, id) {
     };
 
     await axios
-        .get(API_BASE_URL + endpoint + `/${id}`)
+        .get(BASE_URL + endpoint + `/${id}`)
         .then((response) => {
             console.log("axios response: ", response);
             result.data = response.data;
@@ -57,7 +57,7 @@ async function post(endpoint, payload) {
         error: null,
     };
     await axios
-        .post(API_BASE_URL + endpoint, payload)
+        .post(BASE_URL + endpoint, payload)
         .then((response) => {
             console.log("axios response: ", response);
             result.data = response.data;
@@ -80,7 +80,7 @@ async function updateOne(endpoint, payload, id) {
         error: null,
     };
     await axios
-        .patch(API_BASE_URL + endpoint + `/${id}`, payload)
+        .patch(BASE_URL + endpoint + `/${id}`, payload)
         .then((response) => {
             console.log("axios response: ", response);
             result.data = response.data;
@@ -103,7 +103,7 @@ async function deleteOne(endpoint, id) {
         error: null,
     };
     await axios
-        .delete(API_BASE_URL + endpoint + `/${id}`)
+        .delete(BASE_URL + endpoint + `/${id}`)
         .then((response) => {
             console.log("axios response: ", response);
             result.data = response.data;

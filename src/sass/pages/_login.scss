@@ -21,7 +21,7 @@
     .form-group {
       margin-bottom: 20px;
 
-      .login-input {
+      .loginEmail, .loginPassword {
         width: 100%;
         padding: 12px;
         border: 2px solid #e1e1e1;
@@ -36,7 +36,7 @@
       }
     }
 
-    .btn {
+    .loginBtn {
       width: 100%;
       padding: 12px;
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);

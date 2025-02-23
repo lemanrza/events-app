@@ -1,8 +1,10 @@
 @import "./base/reset";
 @import "./layout/header";
 @import "./layout/footer";
-@import "./layout/home";
-@import "./layout/event";
-@import "./layout/eventDetail";
-@import "./layout/login";
-@import "./layout/register";
+@import "./pages/home";
+@import "./pages/event";
+@import "./pages/eventDetail";
+@import "./pages/user";
+@import "./pages/basket";
+@import "./pages/login";
+@import "./pages/register";

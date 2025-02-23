@@ -41,20 +41,22 @@
     <div class="container">
         <div class="form-container">
             <h1>Login</h1>
-            <form>
+            <form class="loginForm">
                 <div class="form-group">
-                    <input class="login-input" type="email" name="email" placeholder="Email" required>
+                    <input class="loginEmail" type="email" name="email" placeholder="Email" required>
                 </div>
                 <div class="form-group">
-                    <input class="login-input" type="password" name="password" placeholder="Password" required>
+                    <input class="loginPassword" type="password" name="password" placeholder="Password" required>
                 </div>
-                <button type="submit" class="btn">Login</button>
+                <button type="submit" class="loginBtn">Login</button>
             </form>
             <p class="redirect-text">
                 Don't have an account? <a href="register.html">Register here</a>
             </p>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="./src/scripts/pages/login.js"></script>
 </body>
 
 </html>
