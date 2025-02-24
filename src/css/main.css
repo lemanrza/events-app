@@ -75,6 +75,7 @@ header .logo {
 }
 header .register {
   display: flex;
+  align-items: center;
   gap: 19px;
 }
 header .register a {
@@ -169,7 +170,6 @@ footer .footer-image img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
   position: relative;
 }
 .slider-info .swiper .swiper-wrapper .swiper-slide span {
@@ -661,6 +661,9 @@ footer .footer-image img {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   border-radius: 9px;
   overflow: hidden;
+}
+.heading_sort .event_card_container .item .image {
+  height: 400px;
 }
 .heading_sort .event_card_container .item .image img {
   width: 100%;

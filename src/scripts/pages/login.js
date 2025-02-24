@@ -14,18 +14,35 @@ loginForm.addEventListener("submit", async function (e) {
             x.password == loginInputs.password.value
         )
     })
-    if(checkValidUser){
+    if (checkValidUser) {
         Swal.fire({
             title: "Welcome Back",
+            timer: 1500,
             icon: "success"
-          });
-          localStorage.setItem("userId", JSON.stringify(checkValidUser.id))
-          window.location.href="/index.html"
+        });
+        localStorage.setItem("userId", JSON.stringify(checkValidUser.id))
+        setTimeout(() => {
+            window.location.href = "/index.html"
+        }, 1500);
     }
     else {
         Swal.fire({
             title: "Email or password is incorrect",
             icon: "error"
-          });
+        });
+    }
+});
+
+window.addEventListener("DOMContentLoaded", async function () {
+    const userId = JSON.parse(this.localStorage.getItem("userId"))
+    const apiResponse = await controller.getAll(endpoints.users)
+    if (userId) {
+        const checkUser = apiResponse.data.find((x) => x.id == userId)
+        if (checkUser) {
+            this.window.location.href = "/user.html"
+        }
+        else {
+            this.window.location.href = "/login.html"
+        }
     }
 })
