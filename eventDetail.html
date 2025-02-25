@@ -53,55 +53,56 @@
 
     </header>
     <main>
-            <div class="event-main-content">
-                <div class="event-poster">
-                    <img src="https://static.vecteezy.com/system/resources/previews/047/014/007/non_2x/glow-black-orange-disco-party-dj-event-poster-template-editor_template.jpeg?last_updated=1719648060"
-                        alt="Event Poster">
+        <div class="event-main-content">
+            <div class="event-poster">
+                <img id="cover-image" src="" alt="Event Poster">
+            </div>
+
+            <div class="event-content-side">
+                <div class="info-section-group">
+                    <div class="info-group">
+                        <h3>Event Information</h3>
+                        <ul>
+                            <li><b>Date & Time:</b><span id="eventDateTime"></span></li>
+                            <li><b>Age Restriction:</b><span id="ageRestriction"></span></li>
+                            <li><b>Category:</b><span id="eventCategory"></span></li>
+                            <li><b>Duration:</b><span id="duration"></span> minutes </li>
+                        </ul>
+                    </div>
+
+                    <div class="info-group">
+                        <h3>Venue Details</h3>
+                        <ul>
+                            <li><b>Venue Name:</b> <span id="venueName"></span></li>
+                            <li><b>Venue Address:</b> <span id="venueAddress"></span> </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="event-content-side">
-                    <div class="info-section-group">
-                        <div class="info-group">
-                            <h3>Event Information</h3>
-                            <ul>
-                                <li><b>Date & Time:</b> <span id="eventDateTime"></span></li>
-                                <li><b>Age Restriction:</b> <span id="ageRestriction"></span></li>
-                                <li><b>Category:</b> <span id="eventCategory"></span></li>
-                            </ul>
-                        </div>
-
-                        <div class="info-group">
-                            <h3>Venue Details</h3>
-                            <ul>
-                                <li><b>Venue Name:</b> <span id="venueName"></span></li>
-                                <li><b>Venue Address:</b> <span id="venueAddress"></span></li>
-                            </ul>
-                        </div>
+                <div class="info-section-group">
+                    <div class="info-group">
+                        <h3>Organizer Information</h3>
+                        <ul>
+                            <li><b>Organizer:</b> <span id="organizerName"></span></li>
+                        </ul>
                     </div>
 
-                    <div class="info-section-group">
-                        <div class="info-group">
-                            <h3>Organizer Information</h3>
-                            <ul>
-                                <li><b>Organizer:</b> <span id="organizerName"></span></li>
-                            </ul>
-                        </div>
-
-                        <div class="info-group">
-                            <h3>Event Description</h3>
-                            <p id="eventDescription"></p>
-                        </div>
+                    <div class="info-group">
+                        <h3>Event Description</h3>
+                        <p id="eventDescription"></p>
                     </div>
+                </div>
 
-                    <div class="ticket-info">
-                        <h3>Ticket Information</h3>
-                        <p><b>Ticket Price:</b> <span id="ticketPrice"></span></p>
-                        <button class="book-now-btn">Add to Basket</button>
-                    </div>
+                <div class="ticket-info">
+                    <h3>Ticket Information</h3>
+                    <p><b>Ticket Price:</b> <span id="ticketPrice"></span> AZN</p>
+                    <button class="book-now-btn">Add to Basket</button>
                 </div>
             </div>
+        </div>
     </main>
     <script type="module" src="./src/scripts/helpers/navbar.js"></script>
+    <script type="module" src="./src/scripts/pages/detail.js"></script>
 
 </body>
 

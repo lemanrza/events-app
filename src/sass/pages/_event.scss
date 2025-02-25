@@ -36,6 +36,7 @@
 
             input {
                 border: none;
+                width: 90%;
                 outline: none;
             }
         }
@@ -67,6 +68,7 @@
                 flex-direction: column;
                 gap: 1.3rem;
                 padding: .8rem 0 .8rem 1.1rem;
+                position: relative;
 
                 h5 {
                     color: #7a7a7a;
@@ -83,6 +85,21 @@
                     font-weight: 500;
                     font-size: .7rem;
                     color: #7a7a7a;
+                }
+
+                i {
+                    position: absolute;
+                    bottom: 15%;
+                    right: 10%;
+                    transform: translate(-10%, -15%);
+                    font-size: 1.7rem;
+                    cursor: pointer;
+                    color: black;
+                    transition: .3s linear;
+
+                    &:hover {
+                        color: red;
+                    }
                 }
             }
         }

@@ -37,23 +37,22 @@
             <a href="./favorites.html"><i class="fa-regular fa-heart"></i></a>
             <a href="./login.html"><i class="fa-regular fa-user"></i></a>
         </div>
-       
+
     </header>
     <main>
         <section class="heading_sort">
             <h1>All Events</h1>
             <div class="sort-form">
-                <select name="address" id="addressSort">
+                <select name="address" id="priceSort">
                     <option value="" selected hidden>Choose Price Range</option>
-                    <option value="6">20-40$</option>
-                    <option value="12">40-70$</option>
-                    <option value="18">70-100%</option>
-                    <option value="18">100$+</option>
+                    <option value="allPrice">All</option>
+                    <option value="high">Low to High</option>
+                    <option value="low">High to Low</option>
                 </select>
-                <select name="" id="">
+                <select name="" id="sortDate">
                     <option value="All">All</option>
-                    <option value="New">Upcoming First</option>
-                    <option value="Old">Oldest First</option>
+                    <option value="New">Nearest First</option>
+                    <option value="Old">Farthest First</option>
                 </select>
                 <div class="searchForm">
                     <input name="search" id="searchInput" placeholder="Search Event">
@@ -61,14 +60,14 @@
                 </div>
             </div>
             <div class="event_card_container">
-                
+
 
             </div>
         </section>
 
     </main>
     <script type="module" src="./src/scripts/helpers/navbar.js"></script>
-<script type="module" src="./src/scripts/pages/events.js"></script>
+    <script type="module" src="./src/scripts/pages/events.js"></script>
 </body>
 
 </html>
