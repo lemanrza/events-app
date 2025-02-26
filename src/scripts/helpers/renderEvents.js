@@ -19,10 +19,10 @@ export function renderEventsCard(events) {
         </div>`;
     });
 
-    // Reattach event listeners after the events have been rendered
     const favBtns = document.querySelectorAll(".fav");
     favBtns.forEach((favBtn) => {
         favBtn.addEventListener("click", function () {
+            favBtn.style.backgroundColor="#D60000"
             const eventId = this.getAttribute("data-id");
             let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
             
@@ -35,7 +35,7 @@ export function renderEventsCard(events) {
                 });
             } else {
                 const event = events.find(event => event.id === eventId);
-                favorites.push(event); // Fix the typo here
+                favorites.push(event); 
                 this.classList.add("favorited");
                 Swal.fire({
                     title: "Event added to favorites",

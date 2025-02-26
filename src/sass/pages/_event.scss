@@ -87,10 +87,14 @@
                     color: #7a7a7a;
                 }
 
-                i {
+                button {
+                    border: none;
+                    background-color: transparent;
                     position: absolute;
                     bottom: 15%;
                     right: 10%;
+                    padding: 7px;
+                    border-radius: 7px;
                     transform: translate(-10%, -15%);
                     font-size: 1.7rem;
                     cursor: pointer;

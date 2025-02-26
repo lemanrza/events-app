@@ -4,29 +4,30 @@
     gap: 3rem;
     margin-top: 3rem;
 
-    .event-card {
+    .event-favorite-card {
         box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
         border-radius: 9px;
         margin-bottom: 3rem;
+        width: 100%;
 
         .favorites-img {
-            height: 200px;
+            width: 100%;
+            height: 380px;
 
             .event-img {
                 width: 100%;
-                height: 250px;
+                height: 100%;
                 object-fit: cover;
             }
         }
 
-        .event-content {
+        .event-favorite-content {
             display: flex;
             flex-direction: column;
             gap: 1.3rem;
             padding: 1rem;
-            position: relative;
 
-            .event-title {
+            .event-favorite-title {
                 color: #7a7a7a;
                 font-weight: 500;
                 font-size: 1.1rem;
@@ -51,13 +52,16 @@
             background-color: #f9f9f9;
             border-top: 1px solid #e0e0e0;
 
-            .delete {
+            .delete-favorite {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 background-color: transparent;
                 border: none;
                 font-size: 1.2rem;
                 color: black;
                 cursor: pointer;
-                transition: 0.3s ease-in-out;
+                transition: 0.2s ease-in-out;
 
                 &:hover {
                     color: red;

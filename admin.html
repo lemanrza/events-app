@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="./src/css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <title>Home Page</title>
+    <title>Admin Panel</title>
 </head>
 
-<body class="detail-body">
+<body>
     <header>
         <div class="header_pages">
             <ul>
@@ -52,59 +52,62 @@
         </div>
 
     </header>
-    <main>
-        <div class="event-main-content">
-            <div class="event-poster">
-                <img id="cover-image" src="" alt="Event Poster">
+    <main class="admin-main">
+            <div class="admin-header">
+                <h1>Event Management Panel</h1>
+                <button class="view-users-btn">
+                    <i class="fas fa-users"></i>
+                    View Users
+                </button>
             </div>
 
-            <div class="event-content-side">
-                <div class="info-section-group">
-                    <div class="info-group">
-                        <h3>Event Information</h3>
-                        <ul>
-                            <li><b>Date & Time:</b><span id="eventDateTime"></span></li>
-                            <li><b>Age Restriction:</b><span id="ageRestriction"></span></li>
-                            <li><b>Category:</b><span id="eventCategory"></span></li>
-                            <li><b>Duration:</b><span id="duration"></span> minutes </li>
-                        </ul>
-                    </div>
-
-                    <div class="info-group">
-                        <h3>Venue Details</h3>
-                        <ul>
-                            <li><b>Venue Name:</b> <span id="venueName"></span></li>
-                            <li><b>Venue Address:</b> <span id="venueAddress"></span> </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="info-section-group">
-                    <div class="info-group">
-                        <h3>Organizer Information</h3>
-                        <ul>
-                            <li><b>Organizer:</b> <span id="organizerName"></span></li>
-                        </ul>
-                    </div>
-
-                    <div class="info-group">
-                        <h3>Event Description</h3>
-                        <p id="eventDescription"></p>
-                    </div>
-                </div>
-
-                <div class="ticket-info">
-                    <h3>Ticket Information</h3>
-                    <p><b>Ticket Price:</b> <span id="ticketPrice"></span> AZN</p>
-                    <button class="book-now-btn">Add to Basket</button>
-                </div>
-            </div>
-        </div>
-    </main>
+            <div class="events-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Event Photo</th>
+                            <th>Event Name</th>
+                            <th>Date</th>
+                            <th>Venue</th>
+                            <th>Ticket Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="event-photo">
+                                <img src="https://cdn.iticket.az/event/artist/LRwDdS2YYQMMNFqsq3oyp3jui6s78YrpvKONensD.png"
+                                    alt="Event Photo">
+                            </td>
+                            <td>Sancak Concert</td>
+                            <td>22.12.23</td>
+                            <td>Hayal Kahvesi</td>
+                            <td class="ticket-status">
+                                <div class="status-info">
+                                    <span class="sold">Sold: 150</span>
+                                    <span class="available">Available: 50</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 75%"></div>
+                                </div>
+                            </td>
+                            <td class="actions">
+                                <button class="edit-btn">
+                                    <i class="fas fa-edit"></i>
+                                    Edit Event
+                                </button>
+                                <button class="delete-btn">
+                                    <i class="fas fa-trash"></i>
+                                    Delete
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> 
+    </main> 
     <script type="module" src="./src/scripts/helpers/navbar.js"></script>
-    <script type="module" src="./src/scripts/pages/detail.js"></script>
-    <script type="module" src="./src/scripts/pages/basket.js"></script>
-
+<script type="module" src="./src/scripts/pages/admin.js"></script>
 </body>
 
 </html>

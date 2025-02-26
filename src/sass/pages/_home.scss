@@ -37,21 +37,24 @@
                 position: relative;
 
                 span {
-                    font-size: 300px;
+                    font-size: 250px;
                     position: absolute;
                     top: 50%;
+                    letter-spacing: 10px;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    -webkit-text-fill-color: transparent;
-                    -webkit-text-stroke: 3px #fff;
+                    -webkit-text-fill-color:transparent;
+                    -webkit-text-stroke: 3px white;
                 }
 
                 .image {
-                    height: 500px;
+                    // height: 500px;
                     width: 550px;
+                    width: 100%;
+                    height: 100vh;
                     overflow: hidden;
                     position: absolute;
-                   opacity: .7;
+                   opacity: .5;
                     img {
                         display: block;
                         width: 100%;
