@@ -15,7 +15,10 @@
             color: #1a1a1a;
         }
 
-        .view-users-btn {
+       .buttons {
+        display: flex;
+        gap: 15px;
+        .view-users-btn, .add-events-btn {
             padding: 0.8rem 1.5rem;
             background-color: #2563eb;
             color: white;
@@ -31,6 +34,7 @@
                 background-color: #1d4ed8;
             }
         }
+       }
     }
 }
 

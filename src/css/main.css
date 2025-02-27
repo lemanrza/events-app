@@ -1237,7 +1237,11 @@ footer .footer-image img {
   margin-left: 0.3rem;
   color: #1a1a1a;
 }
-.admin-main .admin-header .view-users-btn {
+.admin-main .admin-header .buttons {
+  display: flex;
+  gap: 15px;
+}
+.admin-main .admin-header .buttons .view-users-btn, .admin-main .admin-header .buttons .add-events-btn {
   padding: 0.8rem 1.5rem;
   background-color: #2563eb;
   color: white;
@@ -1249,7 +1253,7 @@ footer .footer-image img {
   gap: 8px;
   transition: 0.3s;
 }
-.admin-main .admin-header .view-users-btn:hover {
+.admin-main .admin-header .buttons .view-users-btn:hover, .admin-main .admin-header .buttons .add-events-btn:hover {
   background-color: #1d4ed8;
 }
 

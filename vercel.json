@@ -5,8 +5,30 @@
             "destination": "/login.html"
         },
         {
-            "source": "/registrration",
-            "destination": "/registration.html"
+            "source": "/register",
+            "destination": "/register.html"
+        },
+        {
+            "source": "/event",
+            "destination": "/event.html"
+        },
+        {
+            "source": "/admin",
+            "destination": "/admin.html"
+        },
+        {
+            "source": "/eventDetail",
+            "destination": "/eventDetail.html"
+        }, {
+            "source": "/basket",
+            "destination": "/basket.html"
+        }, {
+            "source": "/favorites",
+            "destination": "/favorites.html"
+        },
+        {
+            "source": "/user",
+            "destination": "/user.html"
         },
         {
             "source": "/",
