@@ -32,7 +32,7 @@ var swiper = new Swiper(".mySwiper2", {
       slidesPerView: 3,
     },
     576: {
-      slidesPerView: 2,
+      slidesPerView: 1,
     },
     450: {
       slidesPerView: 1,

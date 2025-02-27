@@ -1,51 +1,17 @@
 {
   "events": [
     {
-      "id": "1",
-      "name": "Circus Sea Breeze",
-      "dateTime": "2024-12-05 19:00",
-      "venueName": "Sea Breeze Resort",
-      "venueAddress": "Baku, Azerbaijan",
-      "venueCapacity": 5000,
-      "organizer": "Mega Events",
-      "description": "An unforgettable circus experience at the beach!",
-      "ticketsAvailable": 4500,
-      "category": "Entertainment",
-      "price": 50,
-      "ageRestriction": "All Ages",
-      "posterURL": "https://seabreeze.az/uploads/2024/06/02/33_circus_cove.jpg",
-      "duration": 120,
-      "soldTickets": 500
-    },
-    {
-      "id": "2",
-      "name": "Hadise - Summer Vibes Tour",
-      "dateTime": "2025-05-09 20:00",
-      "venueName": "Beşiktaş Vodafone Park",
-      "venueAddress": "Istanbul, Turkey",
-      "venueCapacity": 42000,
-      "organizer": "Hadise Music",
-      "description": "Hadise brings her high-energy performance to Istanbul!",
-      "ticketsAvailable": 38000,
-      "category": "Music",
-      "price": 75,
-      "ageRestriction": "All Ages",
-      "posterURL": "https://cdn.iticket.az/event/poster_square/JFnRFuOZdfu6EVCtZkJtdtsFdF1WZbqVd3QtXBBG.jpg",
-      "duration": 130,
-      "soldTickets": 4000
-    },
-    {
       "id": "3",
-      "name": "The Weeknd - After Hours Tour",
+      "name": "Quzu",
       "dateTime": "2024-11-12 20:00",
       "venueName": "Madison Square Garden",
       "venueAddress": "New York, USA",
       "venueCapacity": 20000,
       "organizer": "XO Live",
-      "description": "The Weeknd brings his After Hours Tour to NYC for a night of hits!",
+      "description": "NYC ",
       "ticketsAvailable": 18000,
       "category": "Music",
-      "price": 250,
+      "price": 0,
       "ageRestriction": "16+",
       "posterURL": "https://i.pinimg.com/736x/3f/74/b4/3f74b4d7c0342cdec9a8ea15a6edc9f2.jpg",
       "duration": 150,
@@ -207,6 +173,18 @@
   ],
   "users": [
     {
+      "id": "3",
+      "role": "admin",
+      "username": "admin_user",
+      "email": "admin@example.com",
+      "password": "adminpassword",
+      "balance": 1000,
+      "profilePictureURL": "https://example.com/admin.jpg",
+      "favorites": [],
+      "accountCreationDate": "2021-01-01T00:00:00",
+      "totalSpentMoney": 0
+    },
+    {
       "id": "1",
       "role": "client",
       "username": "john_doe",
@@ -235,18 +213,6 @@
       ],
       "accountCreationDate": "2022-11-20T15:30:00",
       "totalSpentMoney": 300
-    },
-    {
-      "id": "3",
-      "role": "admin",
-      "username": "admin_user",
-      "email": "admin@example.com",
-      "password": "adminpassword",
-      "balance": 1000,
-      "profilePictureURL": "https://example.com/admin.jpg",
-      "favorites": [],
-      "accountCreationDate": "2021-01-01T00:00:00",
-      "totalSpentMoney": 0
     },
     {
       "id": "4",
@@ -302,6 +268,19 @@
       "favorites": [],
       "totalSpentMoney": 0,
       "createdAt": "2025-02-23T21:55:59.618Z",
+      "balance": 0
+    },
+    {
+      "id": "46d6",
+      "fullName": "Fatime Hedisova",
+      "username": "hfatimam58",
+      "email": "fatimehedisova14@gmail.com",
+      "password": "fatime1234",
+      "role": "client",
+      "profileImg": "https://banner2.cleanpng.com/20180404/sqe/avhxkafxo.webp",
+      "favorites": [],
+      "totalSpentMoney": 0,
+      "createdAt": "2025-02-27T10:09:51.665Z",
       "balance": 0
     }
   ],

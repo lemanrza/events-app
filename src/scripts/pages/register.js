@@ -15,7 +15,7 @@ registerForm.addEventListener("submit", async function (e) {
     if (registerInputs.password.value !== registerInputs.confirmPassword.value) {
         Swal.fire({
             title: "Passwords do not match!",
-            position: "top-end",
+            position: "center",
             icon: "error",
             timer: 1500
         });

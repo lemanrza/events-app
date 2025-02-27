@@ -185,7 +185,6 @@ footer .footer-image img {
   -webkit-text-stroke: 3px white;
 }
 .slider-info .swiper .swiper-wrapper .swiper-slide .image {
-  width: 550px;
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -516,6 +515,26 @@ footer .footer-image img {
   background-color: #282B32;
 }
 
+@media (max-width: 1200px) {
+  .slider-info {
+    height: 70vh;
+  }
+  .slider-info .swiper .swiper-wrapper .swiper-slide span {
+    font-size: 150px;
+  }
+}
+@media (max-width: 768px) {
+  .slider-info {
+    height: 50vh;
+  }
+  .slider-info .swiper .swiper-wrapper .swiper-slide span {
+    font-size: 100px;
+  }
+  .slider-info .swiper .swiper-button-next,
+  .slider-info .swiper .swiper-button-prev {
+    display: none;
+  }
+}
 @media (max-width: 991px) {
   .popularCategories .cards-container {
     flex-direction: column;
@@ -580,6 +599,12 @@ footer .footer-image img {
   }
 }
 @media (max-width: 576px) {
+  .slider-info {
+    height: 40vh;
+  }
+  .slider-info .swiper .swiper-wrapper .swiper-slide span {
+    font-size: 50px;
+  }
   .information-about-site .info-cards {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -785,7 +810,7 @@ footer .footer-image img {
 }
 #favorite-list .event-favorite-card .event-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   padding: 0.7rem 1rem;
   background-color: #f9f9f9;
   border-top: 1px solid #e0e0e0;

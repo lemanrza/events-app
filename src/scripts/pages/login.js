@@ -14,6 +14,7 @@ loginForm.addEventListener("submit", async function (e) {
             x.password == loginInputs.password.value
         )
     })
+
     if (checkValidUser) {
         Swal.fire({
             title: "Welcome Back",
@@ -24,7 +25,11 @@ loginForm.addEventListener("submit", async function (e) {
         setTimeout(() => {
             window.location.href = "/index.html"
         }, 1500);
+        if (checkValidUser.role === "admin") {
+            window.location.href = "./admin.html";
+        }
     }
+
     else {
         Swal.fire({
             title: "Email or password is incorrect",
@@ -35,14 +40,22 @@ loginForm.addEventListener("submit", async function (e) {
 
 window.addEventListener("DOMContentLoaded", async function () {
     const userId = JSON.parse(this.localStorage.getItem("userId"))
+
     const apiResponse = await controller.getAll(endpoints.users)
     if (userId) {
         const checkUser = apiResponse.data.find((x) => x.id == userId)
         if (checkUser) {
             this.window.location.href = "/user.html"
         }
+       else if ( userRole !== "admin") {
+            window.location.href = "/login.html";
+        }
+        else if (checkUser.role === "admin") {
+            this.window.location.href = "/admin.html";
+        }
         else {
             this.window.location.href = "/login.html"
         }
     }
+ 
 })
