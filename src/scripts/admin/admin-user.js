@@ -5,13 +5,9 @@ document.addEventListener("DOMContentLoaded", async function () {
     const usersContainer = document.querySelector(".users-container");
 
     async function fetchUsers() {
-        try {
             const response = await controller.getAll(endpoints.users);
             const users = response.data;
             renderUsers(users);
-        } catch (error) {
-            console.error("Error fetching users:", error);
-        }
     }
 
     function renderUsers(users) {
@@ -44,15 +40,12 @@ document.addEventListener("DOMContentLoaded", async function () {
             button.addEventListener("click", async function () {
                 const userId = this.getAttribute("data-id");
 
-                try {
                     const confirmDelete = confirm("Are you sure you want to delete this user?");
                     if (!confirmDelete) return;
 
                     await controller.deleteOne(endpoints.users, userId);
                     document.querySelector(`.user-card[data-id="${userId}"]`).remove();
-                } catch (error) {
-                    console.error("Error deleting user:", error);
-                }
+                
             });
         });
     }

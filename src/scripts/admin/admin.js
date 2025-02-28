@@ -197,11 +197,11 @@ function clearModalFields() {
 //     const users = JSON.parse(localStorage.getItem("users")) || []; 
 //     const currentUser = users.find(user => user.id == userId);
     
-//     if (!userId || !currentUser || currentUser.role !== "admin") {
-//         window.location.href = "/login.html"; 
-//         return;
-//     }
-//    else if (currentUser.role=="admin"){
+//     // if (!userId || !currentUser || currentUser.role !== "admin") {
+//     //     window.location.href = "/login.html"; 
+//     //     return;
+//     // }
+//    if (currentUser.role=="admin"){
 //     this.window.location.href="/admin.html"
 //    }
 // })

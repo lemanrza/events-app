@@ -14,7 +14,7 @@ window.addEventListener("DOMContentLoaded", async function (e) {
         <a href="./basket.html"><i class="fa-solid fa-cart-shopping"></i></a>
         <a href="./favorites.html"><i class="fa-regular fa-heart"></i></a>
         <a href="./user.html" id="loginNavbar">
-            <img src="${checkValidLogin.profileImg}" alt="" 
+            <img src="${checkValidLogin.profilePictureURL}" alt="" 
                 style="width: 35px; height: 35px; border-radius: 50%; object-fit: cover; border: 2px solid #ccc; transition: transform 0.3s ease;"
                 onmouseover="this.style.transform='scale(1.1)'" 
                 onmouseout="this.style.transform='scale(1)'">
