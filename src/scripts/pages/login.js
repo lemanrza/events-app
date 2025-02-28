@@ -23,11 +23,16 @@ loginForm.addEventListener("submit", async function (e) {
         });
         localStorage.setItem("userId", JSON.stringify(checkValidUser.id))
         setTimeout(() => {
-            window.location.href = "/index.html"
+            // window.location.href = "/index.html"
+            if (checkValidUser.role === "admin") {
+                window.location.href = "/admin.html";
+            } else {
+                window.location.href = "/index.html";
+            }
         }, 1500);
-        if (checkValidUser.role === "admin") {
-            window.location.href = "./admin.html";
-        }
+        // if (checkValidUser.role === "admin") {
+        //     window.location.href = "./admin.html";
+        // }
     }
 
     else {

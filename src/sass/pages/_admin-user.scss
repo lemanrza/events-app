@@ -1,0 +1,104 @@
+.admin-users {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.admin-users-header {
+    margin-bottom: 2rem;
+}
+
+.admin-users-header h1 {
+    font-size: 2rem;
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.users-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.user-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #e2e8f0;
+}
+
+.user-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-details {
+    text-align: center;
+}
+
+.user-details h3 {
+    font-size: 1.2rem;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.user-details .username {
+    color: #64748b;
+    margin-bottom: 0.3rem;
+}
+
+.user-details .email {
+    color: #2563eb;
+    font-size: 0.9rem;
+}
+
+.user-details .created-at {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+.user-actions {
+    margin-top: 0.5rem;
+}
+
+.delete-btn {
+    padding: 0.5rem 1.5rem;
+    background-color: #fee2e2;
+    color: #dc2626;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #fecaca;
+}
+
+@media (max-width: 768px) {
+    .admin-users {
+        padding: 1rem;
+    }
+
+    .users-container {
+        grid-template-columns: 1fr;
+    }
+}

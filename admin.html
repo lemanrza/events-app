@@ -36,7 +36,6 @@
                         </div>
                     </div>
                 </li>
-                <li><a href="#contactPage">Contact</a></li>
             </ul>
         </div>
         <div class="bars">
@@ -60,12 +59,38 @@
                     <i class="fa-solid fa-ticket"></i>
                     Add New Event
                 </button>
-                <button class="view-users-btn">
-                    <i class="fas fa-users"></i>
+                <a href="./admin-user.html"  class="view-users-btn">
+                    <i class="fas fa-users" ></i>
                     View Users
-                </button>
+                </a>
                </div>
             </div>
+            <div class="modal-event" id="addEventModal">
+                <div class="modal-header">
+                    <h2>Add New Event</h2>
+                    <span class="close-modal">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <input type="text" id="event-name" placeholder="Event Name">
+                    <input type="datetime-local" id="event-date">
+                    <input type="text" id="event-venue" placeholder="Venue Name">
+                    <input type="text" id="event-address" placeholder="Venue Address">
+                    <input type="number" id="event-capacity" placeholder="Venue Capacity">
+                    <input type="text" id="event-organizer" placeholder="Organizer">
+                    <textarea id="event-description" placeholder="Description"></textarea>
+                    <input type="number" id="event-tickets" placeholder="Tickets Available">
+                    <input type="text" id="event-category" placeholder="Category">
+                    <input type="number" id="event-price" placeholder="Price">
+                    <input type="text" id="event-age" placeholder="Age Restriction">
+                    <input type="url" id="event-poster" placeholder="Poster URL">
+                    <input type="number" id="event-duration" placeholder="Duration (minutes)">
+                    <input type="number" id="event-soldTickets" placeholder="Sold Tickets">
+                </div>
+                <div class="modal-footer">
+                    <button id="save-event">Save Event</button>
+                </div>
+            </div>
+            
 
             <div class="events-table">
                 <table>
