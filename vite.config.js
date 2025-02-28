@@ -11,8 +11,9 @@ export default defineConfig({
         event: "event.html",
         eventDetail: "eventDetail.html",
         admin: "admin.html",
-        user: "user.html"
+        user: "user.html",
+        "admin-user": "admin-user.html"
       },
-    },
-  },
+    },
+  },
 });
